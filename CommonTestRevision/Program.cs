@@ -48,3 +48,40 @@ void CreateDelivery()
 }
 CreateDelivery();
 
+/*
+(a)	Tom tried to implement the following codes based on the class disgram in Figure 3. For each code, indicate if an error occurs. Justify your answer.
+-	Customer cust1 = new Customer (101, “Tony Tan”, 250.0);
+The code does not work because Customer is an abstract class 
+and you cannot create an object of Customer class.
+- Customer cust2 = new Member (101, "Tony Tan", 250.0, 5.0);
+The code has no errors. It creates an object of Member class. 
+Although a variable of Customer class is used, there is no problem upcasting 
+Member (subclass) to Customer (superclass).
+
+(b) Implement the class header for the class Customer.
+abstract class Customer
+{
+}
+
+(c)
+Customer:
+//+CalculateDiscount():double
+public abstract double CalculateDiscount();
+Member:
+// discount = amount x discountRate / 100
+public override double CalculateDiscount()
+{
+    double discount = Amount * DiscountRate / 100;
+    return discount;
+}
+PremiumMember:
+// discount = rewardPoints / 10
+public override double CalculateDiscount()
+{
+    double discount = (double) RewardPoints / 10;
+    return discount;
+}
+
+
+*/
+
