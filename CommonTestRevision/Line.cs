@@ -27,7 +27,7 @@ namespace CommonTestRevision
 
         public double FindIntersectionY(Line l)
         {
-            return 0;
+            return 0; // avoid writing code that is not in the question
         }
     }
 }
