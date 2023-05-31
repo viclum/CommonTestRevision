@@ -82,6 +82,13 @@ public override double CalculateDiscount()
     return discount;
 }
 
+In C#, when you divide one integer by another integer using the `/` operator, the result will be truncated to an integer. This is because integer division always returns the integer value of the quotient, rounding towards zero. If you want to obtain a fractional result from the division of two integers, you can cast one or both of the integers to a floating-point type like `double` or `float` before the division operation. Here is an example:
+```
+int a = 7;
+int b = 3;
+double c = (double)a / b; // c = 2.3333333333333335
+```
+In the above example, we cast the integer `a` to a `double` to obtain a floating-point result for the division operation.
 
 */
 
